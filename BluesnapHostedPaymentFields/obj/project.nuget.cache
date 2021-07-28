@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "DATKXyMQQ9DSGbMNblLmVsSjpf05gl2S72+o+KAIzyjVZHJhJM6rUiES54gT4Qz9S3t0yvU36mMcb7S6dkXJ7A==",
+  "dgSpecHash": "EVF26GfOEDRBOYQMEF1AsCRPzmEfmEdYlUEBfIbA6+KPQRoV2I8MHjFguiVvmYWGM9PjENxO8LkUaQ1jwAzn1A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\cfranks\\Postman\\BluesnapHostedPaymentFields\\BluesnapHostedPaymentFields.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\Hayden\\DayStar\\HostedPaymentField\\BluesnapHostedPaymentFields\\BluesnapHostedPaymentFields.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\hayde_5jbn1tp\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
   "logs": []
 }

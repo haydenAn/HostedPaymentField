@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\cfranks\\Postman\\BluesnapHostedPaymentFields\\BluesnapHostedPaymentFields.csproj": {}
+    "D:\\Hayden\\DayStar\\HostedPaymentField\\BluesnapHostedPaymentFields\\BluesnapHostedPaymentFields.csproj": {}
   },
   "projects": {
-    "C:\\Users\\cfranks\\Postman\\BluesnapHostedPaymentFields\\BluesnapHostedPaymentFields.csproj": {
+    "D:\\Hayden\\DayStar\\HostedPaymentField\\BluesnapHostedPaymentFields\\BluesnapHostedPaymentFields.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\cfranks\\Postman\\BluesnapHostedPaymentFields\\BluesnapHostedPaymentFields.csproj",
+        "projectUniqueName": "D:\\Hayden\\DayStar\\HostedPaymentField\\BluesnapHostedPaymentFields\\BluesnapHostedPaymentFields.csproj",
         "projectName": "BluesnapHostedPaymentFields",
-        "projectPath": "C:\\Users\\cfranks\\Postman\\BluesnapHostedPaymentFields\\BluesnapHostedPaymentFields.csproj",
-        "packagesPath": "C:\\Users\\cfranks\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\cfranks\\Postman\\BluesnapHostedPaymentFields\\obj\\",
+        "projectPath": "D:\\Hayden\\DayStar\\HostedPaymentField\\BluesnapHostedPaymentFields\\BluesnapHostedPaymentFields.csproj",
+        "packagesPath": "C:\\Users\\hayde_5jbn1tp\\.nuget\\packages\\",
+        "outputPath": "D:\\Hayden\\DayStar\\HostedPaymentField\\BluesnapHostedPaymentFields\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\cfranks\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\hayde_5jbn1tp\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -29,6 +26,7 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -40,6 +38,13 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -58,7 +63,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.408\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

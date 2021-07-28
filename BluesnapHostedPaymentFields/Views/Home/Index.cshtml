@@ -5,7 +5,11 @@
 
 <script type="text/javascript" src="https://sandbox.bluesnap.com/web-sdk/4/bluesnap.js"></script>
 
-
+<style>
+	.paymentform{
+		max-width:800px;
+	}
+</style>
 <script>
 	//Run the following command after Document Object Model (DOM) is fully loaded
 
@@ -76,7 +80,7 @@
 
 		function setUpBS() {
 			console.log("got triggered ")
-			console.log(bsObj);
+			console.log(bsObj,bsObj.token);
 		bluesnap.hostedPaymentFieldsCreate(bsObj);
 	}
 
@@ -97,6 +101,7 @@
 					' and fraudSessionId: ' + fraudSessionId +
 					', after that I can call final submit');
 				// submit the form
+				window.location.assign("https://localhost:44305/BSPayment");
 			} else {
 				var errorArray = callback.error;
 				for (i in errorArray) {
@@ -110,8 +115,8 @@
 	}
 
 </script>
-<div class="column">
-	<button onclick="setUpBS()"> set Up hosted Payment fields</button>
+<div class="column paymentform">
+	<button class="btn-success border-white" onclick="setUpBS()"> set Up hosted Payment fields</button>
 	<div class="panel panel-default bootstrap-basic">
 		<form class="panel-body" id="checkout-form" action="#">
 			<div class="row">
@@ -143,7 +148,7 @@
 				</div>
 			</div>
 
-			<button class="btn btn-success btn-lg col-xs-6 col-xs-offset-3" type="button" id="submit-button" onclick="do_when_clicking_submit_button()">Pay Now</button>
+			<a  class="btn btn-success btn-lg col-xs-6 col-xs-offset-3" type="button" id="submit-button" onclick="do_when_clicking_submit_button()">Pay Now</a>
 
 		</form>
 
