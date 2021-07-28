@@ -4,5 +4,18 @@
 @{
 }
 
+<style>
+	.paymentform {
+		max-width: 800px;
+		background-color:whitesmoke;
+		padding:20px;
+	}
 
-<p>@ViewData["Res"]</p>
+</style>
+
+<div class="paymentform">
+	<h3>Response back from https://sandbox.bluesnap.com/services/2/transactions</h3>
+	<h3>transaction has been posted to Bluesnap</h3>
+	<p>@ViewData["Res"]</p>
+
+</div>

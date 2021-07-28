@@ -9,6 +9,35 @@
 	.paymentform{
 		max-width:800px;
 	}
+	.setUpBS{
+		margin-top:20px;
+		border-radius:5px;
+		border:none;
+		padding:10px;
+		margin-bottom: 30px;
+	}
+	.paymentform{
+		padding:20px;
+	}
+	.trow{
+		margin-left:15px;
+	}
+	.pledge{
+		 background-color:whitesmoke;
+		 padding:15px;
+	}
+	.token {
+		word-wrap: break-word;
+		color:chocolate;
+		margin-top:15px;
+	}
+	.pa{
+		margin:0;
+		padding:0;
+	}
+	.paynow{
+		color:white;
+	}
 </style>
 <script>
 	//Run the following command after Document Object Model (DOM) is fully loaded
@@ -116,7 +145,15 @@
 
 </script>
 <div class="column paymentform">
-	<button class="btn-success border-white" onclick="setUpBS()"> set Up hosted Payment fields</button>
+	<div class="pledge">
+		<h3>Pledge CC/Payment Demo Process</h3>
+
+		<p class="pa">POST request https://sandbox.bluesnap.com/services/2/payment-fields-tokens has been sent</p>
+		<p class="pa"> token will show up below if HTTP response is successful</p>
+		<p class="token">@ViewData["token"]</p>
+	</div>
+
+	<button class="btn-success border-white setUpBS" onclick="setUpBS()"> set Up hosted Payment fields</button>
 	<div class="panel panel-default bootstrap-basic">
 		<form class="panel-body" id="checkout-form" action="#">
 			<div class="row">
@@ -135,20 +172,20 @@
 					<span class="helper-text" id="ccn-help"></span>
 				</div>
 				<!--Hosted Field for CC EXP-->
-				<div class="form-group col-xs-7">
+				<div class="form-group col-xs-7 trow">
 					<label for="exp-date">Exp. Date</label>
 					<div class="form-control" id="exp-date" data-bluesnap="exp"></div>
 					<span class="helper-text" id="exp-help"></span>
 				</div>
 				<!--Hosted Field for CC CVV-->
-				<div class="form-group col-xs-5">
+				<div class="form-group col-xs-5 trow">
 					<label for="cvv">Security Code</label>
 					<div class="form-control" id="cvv" data-bluesnap="cvv"></div>
 					<span class="helper-text" id='cvv-help'></span>
 				</div>
 			</div>
 
-			<a  class="btn btn-success btn-lg col-xs-6 col-xs-offset-3" type="button" id="submit-button" onclick="do_when_clicking_submit_button()">Pay Now</a>
+			<a class="btn btn-success btn-lg col-xs-6 col-xs-offset-3 paynow" type="button" id="submit-button" onclick="do_when_clicking_submit_button()">Pay Now</a>
 
 		</form>
 
